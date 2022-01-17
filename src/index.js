@@ -7,17 +7,9 @@ import {
 import App from "./App";
 import Profile from "./Profile";
 import Show from "./Show";
-// import Expenses from "./routes/expenses";
-// import Invoices from "./routes/invoices";
+import List from "./List";
 
-const rootElement = document.getElementById("root");
 render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="Profile" element={<Profile />} />
-      <Route path="Show" element={<Show />} />
-    </Routes>
-  </BrowserRouter>,
-  rootElement
+  <App />,
+  document.getElementById("root")
 );
